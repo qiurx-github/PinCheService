@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LS.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,14 +16,16 @@ namespace PinCheService.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var a = new Class1().GetStr();
+            ViewBag.Message = a;
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            var a = new Class1().GetStr();
+            ViewBag.Message = a;
 
             return View();
         }
